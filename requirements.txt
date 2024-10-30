@@ -33,3 +33,5 @@ huggingface_hub
 langserve
 sse_starlette
 streamlit
+torch
+transformers

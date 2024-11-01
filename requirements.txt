@@ -36,3 +36,4 @@ streamlit
 torch
 transformers
 pydantic
+fastapi

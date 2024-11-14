@@ -1,5 +1,5 @@
 import streamlit as st 
-from langchain_openai import OpenAI
+from langchain_openai import ChatOpenAI
 from langchain.chains.combine_documents import create_stuff_documents_chain
 from langchain.prompts import ChatPromptTemplate, MessagesPlaceholder
 from langchain.chains import create_history_aware_retriever, create_retrieval_chain
@@ -15,7 +15,7 @@ class LanguageModel:
         
     
     def setup_language_model(self):
-        self.llm = OpenAI(model=self.engine)
+        self.llm = ChatOpenAI(model=self.engine)
         
         contextualize_q_system_prompt = (
             "Given a chat history and the latest user question "

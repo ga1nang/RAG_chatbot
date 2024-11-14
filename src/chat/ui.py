@@ -21,7 +21,7 @@ class UIManager:
             self.session_manager.start_new_chat_message()
             st.sidebar.write('New chat session started!')
             
-        session_option = list(st.session_state.chat_session.keys())
+        session_option = list(st.session_state.chat_sessions.keys())
         if session_option:
             current_session_id = st.sidebar.selectbox(
                 'Select a Chat Session', session_option, index=0
@@ -50,7 +50,7 @@ class UIManager:
         engine = st.sidebar.selectbox(
             "Select OpenAI model", ["gpt-4", "gpt-3.5-turbo"]
         )
-        LanguageModel(engine)
+        LanguageModel(engine, chatbot_type)
         
         
     def display_chat_messages(self):

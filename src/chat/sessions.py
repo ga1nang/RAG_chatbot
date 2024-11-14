@@ -37,3 +37,9 @@ class SessionManager:
         if self.get_current_session_id():
             st.session_state.chat_history[self.get_current_session_id()] = messages
             
+            
+    def set_current_session_id(self, session_id):
+        if session_id in st.session_state.chat_sessions:
+            st.session_state.current_session_id = session_id
+        else:
+            st.write('Selected session does not exist')

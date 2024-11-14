@@ -12,10 +12,9 @@ class EmbeddingLoader:
         
     
     def load_embeddings(self):
-        data_path = f'{"credit" if self.chatbot_type == "Credit Papa(Credit scoring)" else "cooking"}'
-        if data_path not in st.session_state:
+        if self.chatbot_type not in st.session_state:
             self.embeddings = OpenAIEmbeddings()
-            data_path = 'store/' + data_path
+            data_path = 'store/' + self.chatbot_type
             
             if data_path == 'credit':
                 st.session_state.credit = None

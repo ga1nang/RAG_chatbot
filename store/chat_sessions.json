@@ -1,0 +1,41 @@
+{
+    "chat_sessions": {
+        "6d224f8b-2708-4379-8f6b-54be9e4e8b07": [
+            {
+                "role": "assistant",
+                "content": "Hi, I am a chatbot who can help you. How can I help you?"
+            },
+            {
+                "role": "user",
+                "content": "My name is Thanh"
+            },
+            {
+                "role": "assistant",
+                "content": "Hello, Thanh! How can I assist you today?"
+            },
+            {
+                "role": "user",
+                "content": "What is my name?"
+            },
+            {
+                "role": "assistant",
+                "content": "Your name is Thanh."
+            }
+        ],
+        "a87971c0-6977-4cec-8575-627f965e49f2": [
+            {
+                "role": "assistant",
+                "content": "Hi, I am a chatbot who can help you. How can I help you?"
+            },
+            {
+                "role": "user",
+                "content": "What is cooking?"
+            },
+            {
+                "role": "assistant",
+                "content": "Cooking is the process of preparing food by applying heat, which alters its flavor, texture, and nutritional properties. It involves various techniques such as boiling, baking, grilling, saut\u00e9ing, and steaming. Cooking not only makes food more palatable but also safer to consume by destroying harmful microorganisms."
+            }
+        ]
+    },
+    "current_session_id": "a87971c0-6977-4cec-8575-627f965e49f2"
+}

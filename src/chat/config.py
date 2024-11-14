@@ -5,7 +5,7 @@ from dotenv import load_dotenv
 class Config:
     def __init__(self, env_path='.env'):
         self.env_path = env_path
-        load_dotenv()
+        self.load_config()
         
     
     def load_config(self):

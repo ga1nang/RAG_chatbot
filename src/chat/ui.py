@@ -48,7 +48,7 @@ class UIManager:
         
         #Choose llm model
         engine = st.sidebar.selectbox(
-            "Select OpenAI model", ["gpt-4", "gpt-3.5-turbo"]
+            "Select OpenAI model", ["gpt-4o", "gpt-3.5-turbo"]
         )
         LanguageModel(engine, chatbot_type)
         
@@ -58,3 +58,7 @@ class UIManager:
             messages = self.session_manager.get_current_messages()
             for msg in messages:
                 st.chat_message(msg['role']).write(msg['content'])
+                
+                
+    def on_app_exit(self):
+        self.session_manager.save_sessions()

@@ -55,7 +55,7 @@ class LanguageModel:
             if self.chatbot_type == 'credit':
                 retriever = st.session_state.credit.as_retriever()
             else:
-                retriever = st.session_state.cooking.as_retriver()
+                retriever = st.session_state.cooking.as_retriever()
                 
             #create Q&A chain
             document_chain = create_stuff_documents_chain(self.llm, self.qa_prompt)

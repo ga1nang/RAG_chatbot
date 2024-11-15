@@ -1,6 +1,3 @@
-# import sys
-# sys.path.append('E:/subject/compulsory_elective_2/real_project')
-
 import streamlit as st
 import atexit
 from src.chat.config import Config

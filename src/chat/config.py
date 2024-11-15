@@ -11,7 +11,7 @@ class Config:
     
     def load_config(self):
         load_dotenv(self.env_path)
-        os.environ['OPENAI_API_KEY'] = st.secrets["OPENAI_API_KEY"]
+        os.environ['OPENAI_API_KEY'] = os.getenv('OPENAI_API_KEY')
         
         
 def main():

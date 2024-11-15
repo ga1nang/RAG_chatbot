@@ -1,5 +1,5 @@
-import sys
-sys.path.append('E:/subject/compulsory_elective_2/real_project')
+# import sys
+# sys.path.append('E:/subject/compulsory_elective_2/real_project')
 
 
 import streamlit as st 

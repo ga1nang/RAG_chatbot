@@ -25,6 +25,16 @@ class ChatHandler:
                         self.session_manager.get_current_messages().append({'role': 'assistant', 'content': assitant_response})
                         st.write(assitant_response)
                         self.session_manager.set_current_messages(self.session_manager.get_current_messages())
+                        
+                        #with a streamlit expander
+                        if 'context' in response and response['context']:
+                                with st.expander("Document similarity search"):
+                                    for i, doc in enumerate(response['context']):
+                                        st.write(doc.page_content)
+                                        st.write('-------------------------------------')
+                        else:
+                            st.write("No relevant documents were found.")
+                        
                     except Exception as e:
                         st.error(f'Error generating response: {e}')
                         

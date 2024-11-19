@@ -20,6 +20,14 @@
             {
                 "role": "assistant",
                 "content": "Your name is Thanh."
+            },
+            {
+                "role": "user",
+                "content": "Hello"
+            },
+            {
+                "role": "assistant",
+                "content": "Hi again! How can I assist you?"
             }
         ],
         "a87971c0-6977-4cec-8575-627f965e49f2": [
@@ -73,5 +81,5 @@
             }
         ]
     },
-    "current_session_id": "a22153ff-4ea1-4b7a-af19-ce8d4ab51627"
+    "current_session_id": "6d224f8b-2708-4379-8f6b-54be9e4e8b07"
 }

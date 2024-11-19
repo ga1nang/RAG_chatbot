@@ -38,9 +38,5 @@
     {
         "input": {"input_question": "What combination of algorithms is used in the proposed credit scoring system for financial institutions?"},
         "output": "Deep neural network and K-Means algorithm."
-    },
-    {
-        "input": {"input_question": "What machine learning algorithm is highlighted for its efficiency in building personal credit risk assessment models in the big data context?"},
-        "output": "The XGBoost machine learning algorithm, noted for its distributed and parallel computing capabilities."
     }
 ]
